@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto Slab', serif;   
+}
+
+
+:root{
+	--skin-color:#6609ff;
+	--p-color:#007bff;
+    --a-color:paleturquoise;
+}
+
+body{
+	background-color: #f5f8fd;
+}
+
+ /*topper section status here */
+ /* #top-header{
+ 	background-color:var(--p-color);
+ 	height: 40px;
+ 	line-height: 40px;    
+ }
+
+
+ #top-header .header-contect{
+ 	font-weight: bolder;
+ 	font-style:oblique;
+ 	color: white;
+
+ }
+
+ #top-header .header-icon{
+    word-spacing: 20px;
+    text-align: right;
+}
+
+#top-header .header-icon a{
+    color: white;
+    padding: 2px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50p
+}
+#top-header .header-icon a:hover{
+    color: var(--skin-color);
+} */
+ /*topper section end here */
+.btn{
+  background-color: #3d3d3d;
+  padding:12px 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size:15px;
+  letter-spacing: 1.5px;
+}
+
+.btn:hover{
+  border-radius: 30px;
+  color:black;
+  background-color: white;
+}
+
+
+/* navbar section starts here */
+#navbar{
+  background-color:black;
+  height: 75px;
+  
+}
+
+
+
+#navbar .navbar{
+  line-height: 75px;
+  padding: 0;
+  height: 75px;
+}
+#navbar .navbar .collapse.show{
+  z-index: 100;
+  background-color:black;
+}
+
+#navbar .navbar .navbar-toggler{
+  background-color: var(--skin-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+#navbar .navbar .navbar-brand{
+  color:white;
+  font-weight: bold;
+  letter-spacing:3px;
+  text-transform: capitalize;
+  padding: 0;
+}
+#navbar .navbar .nav-item .nav-link{
+  color:white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+#navbar .navbar .dropdown .dropdown-menu .dropdown-item{
+  height: 40px;
+  padding: 0;
+  line-height: 40px;
+  color: black;
+  font-weight: bold;
+  
+}
+#navbar .navbar .dropdown .dropdown-menu .dropdown-item:hover{
+  background-color:lawngreen;
+  color: white;
+}
+#navbar .navbar .dropdown .dropdown-menu{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-width: 250px;
+  border: 2px solid var(--s-color);
+}
+#navbar .navbar .nav-item .nav-link:hover{
+  color:red;
+  /* background-color:white;
+  border-bottom: 3px solid #731d05;
+  border-radius: 50%; */
+}
+#navbar .navbar .nav-item.active .nav-link{
+  color: white;
+  background-color: var(--skin-color);
+  border-bottom: 3px solid #731d05;
+}
+
+
+/* navbar section ends here */
+
+
+img{
+  height: 88.5vh;
+  
+}
+
+.card-img, .card-img-bottom {
+    border-bottom-right-radius: calc(0.25rem - 1px);
+    border-bottom-left-radius: calc(30.25rem - 1px);
+}
+.card-title{
+  color: white;
+  font-size: 36px;
+  text-align:left;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 22px;
+    padding: 1.25rem;
+    border-radius: calc(0.25rem - 1px);
+}
+.card-text{
+    color:black;
+    font-weight: bolder;
+    font-size:26px;
+    text-align:right;
+    margin:14px; 
+}
+
+
+
+.card-letter{
+  color:white;
+  font-size:25px;
+  text-align:center;
+  
+}
+
+.bt{
+  background-color:black;
+  box-shadow: 0.2rem 0 0.3rem 0 ;
+  padding:6px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size:15px;
+  letter-spacing: 1.5px;
+  
+}
+
+.bt:hover{
+  border-radius: 30px;
+  color:black;
+  background-color: white;
+}
+
+
+
+/* about us section starts here */
+#about{
+  background-color:#ddd;
+  min-height: 100vh;
+  padding: 60px;
+}
+
+#about .section-title h6{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#about .about-content h2{
+  font-size:20px;
+  font-weight: bolder;
+  text-align:right;
+  margin-top: 10px;
+}
+#about .about-img img{
+  border-radius: 5px;
+}
+#about .about-content{
+  text-align: center;
+}
+#about .about-content p{
+  /* font-weight:bold; */
+  font-size: 18px;
+  margin-top: 25px;
+  text-align: justify;
+}
+
+#about .about-content p:hover{
+  font-weight:bold;
+  font-size: 18px;
+  text-align: justify;
+}
+/* about us section ends here */
+
+
+/* good us section starts here */
+#good{
+  background-color:white;
+  min-height:70vh;
+  padding: 60px;
+}
+
+#good .good-title h6{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#good .good-content h2{
+  font-size:20px;
+  font-weight: bolder;
+  text-align:right;
+  margin-top: 10px;
+}
+#good .good-img img{
+  border-radius: 5px;
+}
+
+#good .good-content button{
+  background-color: #3d3d3d;
+  padding:12px 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size:15px;
+  letter-spacing: 1.5px;
+  margin-top: 2px;
+  margin-left: -35px;
+  margin-right: 5px;
+  text-align: inherit;
+  border-radius: 5px;
+}
+
+#good .good-content button:hover{
+  border-radius: 30px;
+  color:black;
+  background-color: white;
+}
+
+
+#good .good-content h1{
+  font-size: 30px;
+  margin-top: 25px;
+  text-align: justify;
+  font-weight:bold;
+}
+
+/*good  us section ends here */
+
+
+/* good us section starts here */
+#bad{
+  background-color:#ddd;
+  min-height:70vh;
+  padding: 60px;
+}
+
+#bad .bad-title h6{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#bad .bad-content h2{
+  font-size:20px;
+  font-weight: bolder;
+  text-align:right;
+  margin-top: 10px;
+}
+#bad .bad-img img{
+  border-radius: 5px;
+}
+
+#bad .bad-content button{
+  background-color:white;
+  padding:12px 40px;
+  text-decoration: none;
+  color:black;
+  font-size:15px;
+  letter-spacing: 1.5px;
+  margin-top: 2px;
+  margin-left: -35px;
+  margin-right:-40px;
+  text-align: inherit;
+  border-radius: 5px;
+}
+
+#bad .bad-content button:hover{
+  border-radius: 30px;
+  color:white;
+  background-color:  #3d3d3d;
+}
+
+
+#good .good-content h1{
+  font-size: 30px;
+  margin-top: 25px;
+  text-align: justify;
+  font-weight:bold;
+}
+
+/*good  us section ends here */
+
+
+.branch{
+  text-align: center;
+  font-weight: bolder;
+  margin-top:30px;
+  
+}
+.card-img-top{
+  height:auto;
+  border: 2px solid red;
+  border-radius:5px;
+  box-shadow: 0.1rem 2rem 1rem 0 0.1rem;
+}
+
+.card-img-top:hover{
+  border-radius:10px;
+  border: 2px dashed black;
+}
+
+.card{
+  z-index: 1;
+  overflow:hidden;
+  transition: 5s;
+  background-color: white;
+}
+
+.card:hover  h3{
+  color:black !important;  
+}
+
+.card::before{
+  position: absolute;
+  left:-100%;
+  top: 0%;
+  background-color: #007bff;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.card:hover::before{
+  left:0%;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.m-auto:hover{
+  margin: auto !important;
+  font-weight: bolder;
+}
+/*service section starts here*/
+#service{
+  min-height: 100vh;
+  padding: 60px;
+}
+
+#service .service-tittle h6{
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  
+}
+
+#service .service-box{
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#fff;
+  background-clip: border-box;
+  margin-bottom: 20px;
+}
+
+#service .service-box:hover{
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  border-radius: 4px;
+  background-color: #6609ff;
+  border: 1.5px solid var(--s-color);
+}
+
+
+
+#service .service-tax{
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#fff;
+  background-clip: border-box;
+  margin-bottom: 20px;
+}
+
+
+#service .service-tax:hover{
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  border-radius: 4px;
+  background-color:lawngreen;
+  border: 1.5px solid var(--s-color);
+}
+
+#service .service-tax .icon{
+  font-size:30px;
+}
+#service .service-tax .icon:hover{
+  font-size:35px;
+  color:blue;
+}
+
+#service .service-fire{
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#fff;
+  background-clip: border-box;
+  margin-bottom: 20px;
+}
+
+
+#service .service-fire:hover{
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  border-radius: 4px;
+  background-color:red;
+  border: 1.5px solid var(--s-color);
+}
+
+#service .service-fire .icon{
+  font-size:30px;
+}
+#service .service-fire .icon:hover{
+  font-size:35px;
+  color:yellow;
+}
+
+
+#service .service-company{
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#fff;
+  background-clip: border-box;
+  margin-bottom: 20px;
+}
+
+
+#service .service-company:hover{
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  border-radius: 4px;
+  background-color:yellow;
+  border: 1.5px solid var(--s-color);
+}
+
+#service .service-company .icon{
+  font-size:30px;
+}
+#service .service-company .icon:hover{
+  font-size:35px;
+  color:orangered;
+}
+
+#service .service-weed{
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#fff;
+  background-clip: border-box;
+  margin-bottom: 20px;
+}
+
+
+#service .service-weed:hover{
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  border-radius: 4px;
+  background-color:green;
+  border: 1.5px solid var(--s-color);
+}
+
+#service .service-weed .icon{
+  font-size:30px;
+}
+#service .service-weed .icon:hover{
+  font-size:35px;
+  color:firebrick;
+}
+
+
+#service .service-bus{
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#fff;
+  background-clip: border-box;
+  margin-bottom: 20px;
+}
+
+
+#service .service-bus:hover{
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+  border-radius: 4px;
+  background-color:aqua;
+  border: 1.5px solid var(--s-color);
+}
+
+#service .service-bus .icon{
+  font-size:30px;
+}
+#service .service-bus .icon:hover{
+  font-size:35px;
+  color:green;
+}
+
+
+#service .service-box h1{
+  color: var(--skin-color);
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: capitalize; 
+}
+
+#service .service-box p{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#service .service-box .icon{
+  font-size:30px;
+}
+
+#service .service-box .icon:hover{
+  font-size:27px;
+  color:white;
+  }
+/*service section ends here*/
+
+
+/* company section  */
+
+#company{
+  background-color:white;
+  min-height:80vh;
+  padding: 60px;
+}
+
+#company .company-title h6{
+  text-align: center;
+  color:black;
+  font-size: 40px;
+  font-weight: bold;
+ }
+
+ #company img{
+  height:auto;
+  border: 2px solid blue;
+  border-radius:5px;
+  box-shadow: 0.1rem 2rem 1rem 0 0.1rem;
+ }
+
+ #company img:hover{
+  border: 3px dashed black;
+  border-radius:10px;
+ }
+
+ /* company end */
+
+ /* branch name */
+ #branch{
+  background-color: #ddd;
+  min-width:50vh;
+  padding: 60px;
+ }
+
+ #branch .branch-title h6{
+  text-align: center;
+  color:black;
+  font-size: 40px;
+  font-weight: bold;
+ }
+
+ #branch .card img{
+  padding: 2px;
+  border-radius: 10px;
+  border: 2px solid blue;
+
+ }
+
+ #branch .card img:hover{
+  border:3px solid black;
+ }
+ /* branch end */
+
+ /* contact  */
+#contact{
+  background-color:#ffff;
+  min-width:50vh;
+  padding:60px;
+}
+
+#contact .contact-title h6{
+  text-align: center;
+  color:black;
+  font-size: 40px;
+  font-weight: bold;
+}
+#contact img{
+  height:40pc;
+  width: 100pc;
+}
+#contact .form-group label{
+  color:black;
+  letter-spacing:2px;
+  font-weight:bolder ;
+}
+
+#contact .form-group label:hover{
+  color: red;
+  letter-spacing: 3px;
+}
+
+#contact .form-group input{
+  letter-spacing: 3px;
+}
+
+#contact .form-group input:hover{
+  color: red;
+  background-color:lawngreen;
+}
+
+#contact .form-group textarea{
+  letter-spacing:3px;
+  background-color: #ddd;
+  
+}
+ /* contact end */
+
+ /* footer */
+
+ #footer{
+padding:10px;
+}
+
+
+#footer .footer-links ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#footer .footer-links h4{
+color: #fff;
+/* border-bottom: 2px solid white; */
+}
+#footer .footer-links ul li a{
+color: #f5f8fd;
+text-transform: capitalize;
+font-size: 17px;
+text-align: center;
+
+} 
+
+#footer .footer-links ul li a:hover{
+color: black;
+}
+
+#footer .text-center{
+color: #fff;
+font-size: 18px;
+border-top: 3px solid white;
+margin: 3px;
+
+}
+#footer .icon{
+font-size: 20px;
+/* text-align: center; */
+word-spacing: 5px;
+border-radius:40px;
+}
+#footer .icon .icon{
+color: #f5f8fd;
+font-size: 25px;
+border-radius: 40px;
+}
+
+#footer .icon .icon:hover{
+  color:black;
+  font-size:30px;
+
+}
+/*footer section end here*/
