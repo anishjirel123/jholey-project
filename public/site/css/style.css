@@ -55,6 +55,7 @@ body{
   color: #fff;
   font-size:15px;
   letter-spacing: 1.5px;
+
 }
 
 .btn:hover{
@@ -100,7 +101,7 @@ body{
   color:white;
   letter-spacing: 2px;
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 #navbar .navbar .dropdown .dropdown-menu .dropdown-item{
   height: 40px;
@@ -129,8 +130,8 @@ body{
 }
 #navbar .navbar .nav-item.active .nav-link{
   color: white;
-  background-color: var(--skin-color);
-  border-bottom: 3px solid #731d05;
+  /* background-color: var(--skin-color); */
+  border-bottom: 5px solid red;
 }
 
 
@@ -393,6 +394,7 @@ img{
   margin: auto !important;
   font-weight: bolder;
 }
+
 /*service section starts here*/
 #service{
   min-height: 100vh;

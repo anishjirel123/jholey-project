@@ -1,54 +1,5 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-  <link rel="stylesheet" href=" {{ asset('site/bootstrap/css/bootstrap.css') }}">
-  <link rel="stylesheet" href="{{ asset('site/fontawesome/css/all.css') }}">
-  <link rel="stylesheet" href="{{ asset('site/css/style.css') }}">
-
-
-
-</head>
-<body>
-          <!--  navbar section starts here  -->
-   <section id="navbar">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">JHOLEY</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav text-center ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">ABOUTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">SERVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">GALLERY</a>
-              </li>           
-              <li class="nav-item">
-                <a class="nav-link" href="`">CONTACT</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-            <!-- <button class="btn" type="submit">Search</button> -->
-          </form>
-          </div>
-        </nav>
-      </div>
-   </section>
-<!-- navbar section end here  -->
+@extends('site.template', ['activePage' => 'home'])
+@section('content')
 
 <section id="imaage" >
      <div class="container-flude">
@@ -61,7 +12,7 @@
               <p class="card-letter">Cancer For Disease Control Anc prevention</p>
                 <p class="card-text">Natioanl Centre For Chronic Disease Prevention and promation</p>
                 <p class="card-text">Office On Smoking And Health </p>
-                <a href="#" class="bt">Read More</a><br><br>
+                <a href="{{ route('getMore') }}" class="bt">Read More</a><br><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <a href="#" class="bt">Just Me</a>
          </div>
@@ -94,7 +45,7 @@
               <p>One of the most common problems we are facing in today’s world which is killing people is smoking. A lot of people pick up this habit because of stress, personal issues and more. In fact, some even begin showing it off. </p>
               <p>Tobacco can have a disastrous impact on our health. Nonetheless, people consume it daily for a long period of time till it’s too late. Nearly one billion people in the whole world smoke. It is a shocking figure as that 1 billion puts millions of people at risk along with themselves.
                 Cigarettes have a major impact on the lungs. Around a third of all cancer cases happen due to smoking. For instance, it can affect breathing and causes shortness of breath and coughing. Further, it also increases the risk of respiratory tract infection which ultimately reduces the quality of life.</p>
-              <a href="#" class="btn">Read More <i class="fas fa-book"></i></a>
+              <a href="{{ route('getReadmore') }}" class="btn">Read More <i class="fas fa-book"></i></a>
             </div>
           </div>
         </div>
@@ -312,9 +263,9 @@
               <div class="service-box">
               <i class="fa-solid fa-smoking icon"></i>
                 <h2 style=" font-weight: bold; font-size: 30px; text-transform: capitalize;">Cigratte</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>Lorem ipsum dolowr sit amet, consectetfeur adipisiecing elit, sed do eiusmod
+                  tempor incididunt wut labore et dolore magna aliqua. Uet enim ad minim veniawem,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex sssea commodo consequat.</p>
                   <a href="#" class="btn">Read  <i class="fa-solid fa-book-open-reader"></i></a>
               </div>      
             </div>
@@ -525,64 +476,5 @@
       </div>  
 </section>
 <!-- contact end -->
+@endsection
 
-
-
-
-<!-- footer -->
-<section id="footer" style="background-image: linear-gradient(180deg, #252525, transparent); border-radius: 50px 35px 15px 15px"> 
-   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-about">
-          <a href="#">
-            <h1>JHOLEY</h1>
-        </div>
-      </div>
-       <div class="col-md-4">
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Abouts </a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-       </div>
-       
-      <div class="col-md-4">
-        <h4 style="color:white;">Social Icon</h4>
-       <div class="icon">
-        <a href="" class="icon"><i class="fab fa-facebook"></i></a>
-        <a href="" class="icon"><i class="fab fa-youtube"></i></a>
-        <a href="" class="icon"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-  
-    </div>
-      
-    <div class="col-md-3">
-        <div class="footer-links">
-          <h4>Location Map</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2124214971436!2d85.3129816145832!3d27.710726931951328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19018eac7c0f%3A0x82d81614fc050b54!2sSurya%20Nepal%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1663227890765!5m2!1sen!2snp"></iframe>
-        </div>
-       </div>
-
-      <div class="col-md-12 text-center" style="color: black; letter-spacing:2px; font-weight:bolder;">
-        "@2001Copyright:Jholey.com"
-    </div>
-      
-
-   </div>  
-</section>      
-<!-- footer section end here -->
-
-    <script src="{{asset('site/js/jquery.js')}}"></script>
-    <script src="{{asset('site/bootstrap/js/bootstrap.js')}}"></script>
-    <script src="{{asset('site/fontawesome/js/all.js')}}"></script>
-    <script src="{{asset('site/js/script.js') }}"></script>
-
-
-</body>
-</html>

@@ -1,5 +1,5 @@
 <?php
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,12 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/',[HomeController::class,'getHome'])->name('getHome');
+Route::get('/',[SiteController::class,'getHome'])->name('getHome');
 
-Route::get('about',[HomeController::class,'getAbout'])->name('getAbout');
+Route::get('abouts', [SiteController::class ,'getAbouts'])->name('getAbouts');
 
-// Route::get('service',[HomeController::class,'getSerivce'])->name('getService');
+Route::get('service', [SiteController::class ,'getService'])->name('getService');
 
-// Route::get('gallery',[HomeController::class,'getGallery'])->name('getGallery');
+Route::get('contact', [SiteController::class ,'getContact'])->name('getContact');
 
-// Route::get('contact',[HomeController::class,'getContact'])->name('getContact');
+Route::get('readmore',[SiteController::class,'getReadmore'])->name('getReadmore');
+
+Route::get('more',[SiteController::class,'getMore'])->name('getMore');
